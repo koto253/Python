@@ -1,4 +1,3 @@
-from datetime import datetime
 
 class Person:
     def __initi__(self, name, dob, hair_color, nationality):
@@ -8,7 +7,7 @@ class Person:
         self.nationality = nationality
 
     def printIdentity(self):
-        print(f"I'm {self.name}, I am born in {self.dob}, my nationality is {self.nationality}")
+        print("Im " + self.name + "I am born in " + str(self.dob) + " and my nationality is " + self.nationality)
 
 identity = Person("Ismael", 1995, "black", "Guinean")
 identity.printIdentity()
