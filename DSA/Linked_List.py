@@ -1,9 +1,9 @@
-Class Node:
-    def __init__(self, value, next):
+class Node:
+    def __init__(self, value):
         self.value = value
-        self.next = next 
+        self.next = None 
 
-Class Linked_list:
+class Linked_list:
     def __init__(self, value):
         new_node = Node(value)
         self.head = new_node
@@ -12,4 +12,4 @@ Class Linked_list:
 
 new_linked_list = Linked_list(4)
 
-print(new_linked_list.head)
+print(new_linked_list.head.value)
